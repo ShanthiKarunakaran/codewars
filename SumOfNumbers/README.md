@@ -12,3 +12,6 @@ Examples (a, b) --> output (explanation)
 (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 
 ## What I learnt from this exercise:
+- ternary operators
+- use optional parameter to the function
+- Use of higher order function - reduce instead of looping through array to find sum of all elements in the array
