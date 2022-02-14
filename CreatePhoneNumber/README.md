@@ -9,3 +9,4 @@ Don't forget the space after the closing parentheses!
 
 ## What I learnt from this exercise:
 - usage of slice, join, substring, replace methods in string manipulation
+- use of regexp for matching pattern
