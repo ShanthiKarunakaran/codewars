@@ -1,15 +1,28 @@
 /*codewars kata -Create Phone Number*/
-function createPhoneNumber(arr){
-    //var str = arr.join('')
+function createPhoneNumber(str){
 
-    //using slice and join method
+  //Solution1 : using regexp
+  let str = str.join('');
+  let match = str.match(/^(\d{3})(\d{3})(\d{4})$/);
+  if (match) {
+    return '(' + match[1] + ') ' + match[2] + '-' + match[3]
+  };
 
-    return `(${arr.slice(0,3).join('')}) ${arr.slice(3,6).join('')} -${arr.slice(6).join('')}`
+  /*let test = str.match(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/)
 
-    //using join and then substring
+    if(test) {
+      return `(${str.substring(0,3)}) ${str.substring(3,6)} -${str.substring(6)}`
+    }*/
+  return null
+
+    //Solution 2: using slice and join method with template literals
+
+    //return `(${arr.slice(0,3).join('')}) ${arr.slice(3,6).//join('')} -${arr.slice(6).join('')}`
+
+    //Solution 3: using join and then substring
     /*return `(${str.substring(0,3)}) ${str.substring(3,6)} -${str.substring(6)}`*/
 
-    /*using replace method*/
+    /*Solution 4: using replace method*/
     /*var mask = 'xxx xxx -xxxx'
 
     for(var i=0; i<arr.length; i++) {
